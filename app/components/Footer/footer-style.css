@@ -1,0 +1,32 @@
+.footer {
+  text-transform: uppercase;
+  background-color: #0D2C40;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+  padding: 0 20px;
+}
+
+.copyright {
+  float: left;
+  color: white;
+}
+
+.message {
+  float: right;
+  color: white;
+}
+
+.clearfix:after {
+visibility: hidden;
+display: block;
+content: " ";
+clear: both;
+height: 0;
+font-size: 0;
+}
+
+.name {
+  color: #F15B31;
+  font-weight: 700;
+}
