@@ -6,12 +6,14 @@ import Header from "../Header/Header";
 import Nav from "../Nav/Nav";
 // import Instructions from "../Instructions/Instructions";
 // import Cards from "../Cards/Cards";
+import Button from "../Button/Button";
 import Main from "../Main/Main";
 import Footer from "../Footer/Footer";
 
-const logStuff = () => {
-  console.log("clicked!");
-};
+// const logStuff = () => {
+//   console.log("clicked!");
+//   createBoard();
+// };
 
 const Layout = () => {
   return (
