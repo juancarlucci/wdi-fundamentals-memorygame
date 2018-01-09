@@ -1,0 +1,30 @@
+#game-board {
+  /*width: 100%;*/
+  margin: auto;
+}
+
+#dialogoverlay {
+  display:  none;
+  opacity: .8;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: #FFF;
+  width: 100%;
+  z-index: 10;
+}
+
+#dialogbox {
+  display: none;
+  position: fixed;
+  border: 1px solid #f15b31;
+  /*background-color: #f15b31;*/
+  border-radius: 4px;
+  width: 500px;
+  z-index: 10;
+}
+
+#dialogbox > div {background-color: #FFF; margin: 8px;}
+#dialogbox > div > #dialogboxhead{background-color: #f06b4c; padding: 10px;}
+#dialogbox > div > #dialogboxbody{background-color: #00a6b3; padding: 10px; color: #FFF;}
+#dialogbox > div > #dialogboxfoot{background-color: #ecb45a; padding: 10px; text-align: right;}

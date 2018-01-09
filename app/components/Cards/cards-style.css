@@ -1,3 +1,21 @@
 img {
   margin: 40px 8px 0px 8px;
+
+}
+img:hover {
+  transform: rotateY(180);
+}
+
+.back {
+  position: absolute;
+  transform: perspective(1000px) rotateY( 0deg );
+  backface-visibility: hidden;
+  transition: transform .5s linear 0s;
+}
+
+.front {
+  position: absolute;
+  transform: perspective(1000px) rotateY( 0deg );
+  backface-visibility: hidden;
+  transition: transform .5s linear 0s;
 }

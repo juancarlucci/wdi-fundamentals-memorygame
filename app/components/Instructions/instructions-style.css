@@ -13,3 +13,7 @@ p {
   font-size: 18px;
   line-height: 26px;
 }
+
+#number {
+  width: 6em;
+}
