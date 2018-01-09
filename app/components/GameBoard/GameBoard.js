@@ -58,7 +58,7 @@ function customAlert() {
     var refreshButton = document.getElementById("refresh");
     dialogoverlay.style.display = "block";
     dialogoverlay.style.height = winH+"px";
-    dialogbox.style.left = (winW/2) - (500 * .5) + "px";
+    dialogbox.style.left = (winW/2) - (300 * .5) + "px";
     dialogbox.style.top = (winH/2) +"px";
     dialogbox.style.display = "block";
     document.getElementById("dialogboxbody").innerHTML = dialog;
@@ -68,7 +68,11 @@ function customAlert() {
   this.ok = function (){
     dialogoverlay.style.display = "none";
     dialogbox.style.display = "none";
-    parentBoard.remove();
+    console.log(parentBoard);
+    // parentBoard.removeChild(gameBoardElement);
+    while (parentBoard.hasChildNodes()) {
+        parentBoard.removeChild(parentBoard.firstChild);
+    }
     createBoard();
   }
 }
@@ -82,7 +86,8 @@ function checkForMatch() {
   } else {
     Alert.render("Sorry, try again.");
 
-      gameBoardElement.remove(child);
+      // gameBoardElement.remove("img");
+      // parentBoard.remove(gameBoardElement);
 
     // createBoard();
   }
@@ -94,7 +99,7 @@ function flipCard() {
   flips ++;
   var flipElement = document.createElement("div");
   flipElement.innerHTML = flips;
-  parentBoard.appendChild(flipElement);
+  // parentBoard.appendChild(flipElement);
   console.log(flips);
   console.log("User flipped " + cards[cardId].rank);
   console.log(cards[cardId].cardImage);
@@ -109,8 +114,8 @@ function flipCard() {
   }
 }
 
-var userNumberOfCards = document.getElementById('number').value;
-console.log(userNumberOfCards);
+// var userNumberOfCards = document.getElementById('number').value;
+// console.log(userNumberOfCards);
 const createBoard = function () {
   for (let i = 0; i < cards.length; i++) {
     //http://borgs.cybrilla.com/tils/javascript-for-loop-with-delay-in-each-iteration-using-iife/
@@ -135,7 +140,7 @@ createBoard();
 
 const GameBoard = () => {
   return (
-    <div id="parentBoard">
+
       <div id="game-board" className="board clearfix">
       <div id="dialogoverlay"></div>
       <div id="dialogbox">
@@ -147,7 +152,7 @@ const GameBoard = () => {
         </div>
       </div>
       </div>
-    </div>
+
   );
 };
 

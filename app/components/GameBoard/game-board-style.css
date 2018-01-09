@@ -1,7 +1,26 @@
 #game-board {
-  /*width: 100%;*/
-  margin: auto;
+  width: 100%;
+  /*margin: auto;*/
+  /*display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;*/
 }
+/*#parentBoard {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}*/
 
 #dialogoverlay {
   display:  none;
@@ -20,7 +39,7 @@
   border: 1px solid #f15b31;
   /*background-color: #f15b31;*/
   border-radius: 4px;
-  width: 500px;
+  width: 300px;
   z-index: 10;
 }
 
