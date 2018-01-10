@@ -2,11 +2,12 @@
 
 import React from "react";
 import "./game-board-style";
+import CardList from "../CardList/CardList";
 import Cards from "../Cards/Cards";
 import Button from "../Button/Button";
 
 
-var cards = [
+let cards = [
   {
     rank: "queen",
     suit: "hearts",
@@ -148,6 +149,7 @@ const GameBoard = () => {
           <div id="dialogboxhead"></div>
           <div id="dialogboxbody"></div>
           <button id="refresh">Refresh</button>
+          <CardList cards={this.props.cards}/>
           <div id="dialogboxfoot"></div>
         </div>
       </div>

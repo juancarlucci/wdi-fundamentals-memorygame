@@ -18,7 +18,7 @@ const Layout = () => {
       <Header />
       <Nav />
       <Instructions className="main"/>
-      <GameBoard className="main" cards={cards}/>
+      <GameBoard className="main" />
       <Footer />
     </div>
   );
