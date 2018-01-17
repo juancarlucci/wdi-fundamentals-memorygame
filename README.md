@@ -2,6 +2,8 @@
 
 ### Welcome. This game test you memory. It is a basic card game built using React.js
 
+### For basic varsion (HTML/CSS/JS) please look at the branch vanillaJs
+
 #### Components
 This app is created using webpack to create bundle.js. 
 It runs Bable to transpile JSX.
