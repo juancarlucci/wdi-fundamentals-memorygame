@@ -1,0 +1,132 @@
+body {
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 45px;
+}
+
+header {
+  color: #ffffff;
+  background-color: #f15b31;
+  padding: 30px 20px;
+  width: 100%;
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  color: #0d2c40;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+nav {
+  color: #ffffff;
+  background-color: #00a6b3;
+  padding: 20px 0px;
+}
+
+a {
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0 20px;
+  border-bottom: 2px solid transparent;
+}
+
+a:hover {
+  border-color: white;
+}
+
+p {
+  color: #0d2c40;
+  font-family: "Droid Serif", serif;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+main {
+  width: 850px;
+  margin: 35px auto;
+}
+
+#game-board {
+  /*width: 100%;*/
+  margin: auto;
+
+}
+
+#dialogoverlay {
+  display:  none;
+  opacity: .8;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: #FFF;
+  width: 100%;
+  z-index: 10;
+}
+
+#dialogbox {
+  display: none;
+  position: fixed;
+  border: 1px solid #f15b31;
+  /*background-color: #f15b31;*/
+  border-radius: 4px;
+  width: 300px;
+  z-index: 10;
+}
+
+#dialogbox > div {background-color: #FFF; margin: 8px;}
+#dialogbox > div > #dialogboxhead{background-color: #f06b4c; padding: 10px;}
+#dialogbox > div > #dialogboxbody{background-color: #00a6b3; padding: 10px; color: #FFF;}
+#dialogbox > div > #dialogboxfoot{background-color: #ecb45a; padding: 10px; text-align: right;}
+
+footer {
+  text-transform: uppercase;
+  background-color: #0D2C40;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+  padding: 0 20px;
+}
+
+.copyright {
+  float: left;
+  color: white;
+}
+
+.message {
+  float: right;
+  color: white;
+}
+
+.clearfix:after {
+visibility: hidden;
+display: block;
+content: " ";
+clear: both;
+height: 0;
+font-size: 0;
+}
+
+#number {
+  width: 6em;
+}
+
+.name {
+  color: #F15B31;
+  font-weight: 700;
+}
